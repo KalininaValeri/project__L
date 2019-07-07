@@ -1,0 +1,146 @@
+// custon global styles
+body {
+  @include text(16px, $textColor, 'Open Sans');
+}
+
+.slide-title {
+  @include text(36px, $titleColor, 'Vollkorn', 600);
+  margin: 0;
+}
+
+.slide-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 104px;
+  background: #fff;
+  display: flex;
+  padding: 0 61px 0 27px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 32px rgba(233,205,194,0.18);
+}
+
+.code {
+  flex: 1;
+}
+
+// popup-bg styles
+.popup-bg {
+  @include block(100%, 100%);
+  @include abs-point(0, 0);
+  background-color: $popup_bg;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s opacity;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+//common popup styles
+.popup {
+  height: auto;
+  min-width: 867px;
+  @include abs-point(50%, 50%);
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s all;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .close {
+    @include block(52px, 52px);
+    @include abs(-19px, -19px, auto, auto);
+    @include bg-size('close.png');
+  }
+
+  .content {
+    padding: 40px;
+    line-height: 20px;
+    letter-spacing: 0;
+
+    .popup-title {
+      text-align: center;
+      letter-spacing: inherit;
+    }
+
+    strong {
+      font-weight: bolder;
+    }
+  }
+}
+
+//instruction popup
+#popup-id {
+  .links {
+    text-align: center;
+
+    .link {
+      padding: 16px 30px;
+      font-weight: bolder;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-top: 50px;
+      background: green;
+
+      &.link-kz {
+        margin-right: 90px;
+      }
+
+      &.link-ru {
+      }
+    }
+  }
+}
+
+
+//footer
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 62px;
+  background: #262423;
+  padding: 0 50px 0 26px;
+  @include text(16px, white, 'helvetica', inherit, 16px);
+  position: relative;
+  z-index: 0;
+
+  .item {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  .item__text {
+    margin-left: 16px;
+  }
+
+
+  .dop,
+  .info,
+  .instr {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .info {
+  }
+
+  .dop {
+  }
+
+  .instr {
+    @include block(275px, 73px);
+    left: 704px;
+  }
+}

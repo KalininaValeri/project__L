@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Vollkorn';
+    src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url('Vollkornregular.woff2') format('woff2'), url('Vollkornregular.woff') format('woff'), url('Vollkornregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vollkorn';
+    src: local('Vollkorn SemiBold'), local('Vollkorn-SemiBold'), url('Vollkornsemibold.woff2') format('woff2'), url('Vollkornsemibold.woff') format('woff'), url('Vollkornsemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vollkorn';
+    src: local('Vollkorn Italic'), local('Vollkorn-Italic'), url('Vollkornitalic.woff2') format('woff2'), url('Vollkornitalic.woff') format('woff'), url('Vollkornitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Vollkorn';
+    src: local('Vollkorn Black'), local('Vollkorn-Black'), url('Vollkornblack.woff2') format('woff2'), url('Vollkornblack.woff') format('woff'), url('Vollkornblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vollkorn';
+    src: local('Vollkorn Bold Italic'), local('Vollkorn-BoldItalic'), url('Vollkornbolditalic.woff2') format('woff2'), url('Vollkornbolditalic.woff') format('woff'), url('Vollkornbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Vollkorn';
+    src: local('Vollkorn SemiBold Italic'), local('Vollkorn-SemiBoldItalic'), url('Vollkornsemibolditalic.woff2') format('woff2'), url('Vollkornsemibolditalic.woff') format('woff'), url('Vollkornsemibolditalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Vollkorn';
+    src: local('Vollkorn Bold'), local('Vollkorn-Bold'), url('Vollkornbold.woff2') format('woff2'), url('Vollkornbold.woff') format('woff'), url('Vollkornbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vollkorn';
+    src: local('Vollkorn Black Italic'), local('Vollkorn-BlackItalic'), url('Vollkornblackitalic.woff2') format('woff2'), url('Vollkornblackitalic.woff') format('woff'), url('Vollkornblackitalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}

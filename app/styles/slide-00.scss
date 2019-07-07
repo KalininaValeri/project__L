@@ -1,0 +1,51 @@
+$slide: 'slide-00';
+@import "engine";
+@import "theme";
+
+.#{$slide} {
+  .slide-title {
+    margin-top: 48px;
+    width: 651px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 109%;
+  }
+
+  .packs {
+    width: 595.14px;
+    height: 215.53px;
+    position: absolute;
+    top: 245.25px;
+    left: 220.38px;
+  }
+
+  .caption {
+    top: 479px;
+    position: absolute;
+    width: 428px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .first_plan {
+    width: 466px;
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+  }
+
+  .footer {
+    .dop {
+      // display: none;
+    }
+  }
+}
+
+// animations
+.#{$slide} {
+  // inital state
+  &.slide-active {
+    // active state
+  }
+}

@@ -1,0 +1,41 @@
+      <footer class="footer">
+        <div class="item" data-popup="popup-info" data-prevent-tap="true">
+            <img src="../../media/images/icon_menu.png" alt="">
+            <div class="item__text">Меню</div>
+        </div>
+        <div class="item" data-popup="popup-dop" data-prevent-tap="true">
+            <img src="../../media/images/icon_info.png" alt="">
+            <div class="item__text">Источники</div>
+        </div>
+      </footer>
+
+      <div class="popup-bg" data-prevent-tap="true"></div>
+
+      <div class="popup inctructions" id="popup-id">
+        <div class="close"></div>
+        <div class="content">
+          <div class="popup-title">Инструкция по применению</div>
+          <div class="links">
+            <div class="link link-kz" data-pdf="media/pdf/instruction_kz.pdf">КАЗАХСКИЙ</div>
+            <div class="link link-ru" data-pdf="media/pdf/instruction_ru.pdf">РУССКИЙ</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--build:js js/bundle.js-->
+    <script src="bower/jquery/dist/jquery.js"></script>
+    <script src="bower/fastclick/lib/fastclick.js"></script>
+    <script src="bower/hammer.js/hammer.js"></script>
+    <script src="bower/jquery.hammer.js/jquery.hammer.js"></script>
+
+    <script src="scripts/_cegedim.js"></script>
+    <script src="scripts/flow.{{lang}}.js"></script>
+    <script src="scripts/_engine.js"></script>
+    <script src="scripts/_theme.js"></script>
+    <script src="scripts/@@slide-id.js"></script>
+    <!--endbuild-->
+    {{devScripts}}
+   </body>
+</html>

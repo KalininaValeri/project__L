@@ -1,0 +1,10 @@
+.DS_Store
+.documents
+.docs
+.idea
+.wiki
+app/css
+app/*.html
+node_modules
+/dist
+assets/parameters/*.xml

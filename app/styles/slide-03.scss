@@ -1,0 +1,81 @@
+$slide: 'slide-03';
+@import '_engine';
+.#{$slide} {
+	.code {
+		padding: 58px 53px;
+	}
+
+	.slide-title {
+		width: 434px;
+		line-height: 106%;
+		margin-bottom: 28px;
+	}
+
+	.list {
+		margin: 0;
+		list-style: none;
+		padding: 0;
+		width: 375px;
+	}
+
+	.list__item {
+		padding: 10px 0 10px 20px;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: -5px;
+			right: 0;
+		}
+
+		&.active {
+			.list__point {
+				width: 16px;
+				top: 13px;
+				left: -3px;
+				transition: all 0.5s;
+			}
+		}
+
+		&:last-child {
+			margin: 0;
+		}
+
+	}
+
+	.list__point {
+		width: 10px;
+		position: absolute;
+		top: 17px;
+		left: 0;
+	}
+
+	.list__img {
+		position: absolute;
+		width: 532px;
+		bottom: 70px;
+		right: 1px;
+		opacity: 0;
+		transition: opacity 1s;
+
+		&.active {
+			opacity: 1;
+			transition: opacity 0.5s;
+			transition-duration: 1s;
+		}
+	}
+
+
+}
+// animations
+.#{$slide} {
+
+
+// inital state
+	&.slide-active {
+		// active state
+	}
+}

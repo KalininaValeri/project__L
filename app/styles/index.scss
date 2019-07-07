@@ -1,0 +1,12 @@
+@import "_reset";
+@import "_mixins";
+// menu
+body,
+html {
+  @include block(100%, 100%);
+}
+
+#slide-frame {
+  @include block(100%, 100%);
+  border: 0;
+}
