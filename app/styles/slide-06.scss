@@ -1,0 +1,14 @@
+$slide: 'slide-06';
+@import '_engine';
+.#{$slide} {
+
+}
+// animations
+.#{$slide} {
+
+
+// inital state
+	&.slide-active {
+		// active state
+	}
+}
