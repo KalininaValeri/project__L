@@ -1,0 +1,40 @@
+$slide: 'slide-10';
+@import '_engine';
+.#{$slide} {
+
+	.code {
+		width: 845px;
+		margin: 47px auto 0;
+		text-align: center;
+	}
+
+	.slide-title {
+		color: #05305C;
+		margin-bottom: 23px;
+	}
+
+	.table {
+		width: 845px;
+		margin-bottom: 27px;
+	}
+
+	.accent {
+		margin: auto;
+		width: 788px;
+		font-size: 16px;
+	}
+
+	.accent__wrapper {
+		padding: 23px 22px 21px;
+	}
+
+}
+// animations
+.#{$slide} {
+
+
+// inital state
+	&.slide-active {
+		// active state
+	}
+}
