@@ -1,0 +1,32 @@
+$slide: 'slide-05';
+@import '_engine';
+.#{$slide} {
+	.code {
+		padding: 17px 40px 0 448px;
+	}
+
+	.slide-title {
+		line-height: 105%;
+		margin-left: 44px;
+		margin-bottom: 33px;
+	}
+
+	.slide-paragraph {
+		margin-left: 44px;
+		margin-bottom: 21px;
+	}
+
+	.accent {
+		margin-top: 54px;
+	}
+
+}
+// animations
+.#{$slide} {
+
+
+// inital state
+	&.slide-active {
+		// active state
+	}
+}
