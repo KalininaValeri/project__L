@@ -1,7 +1,42 @@
 $slide: 'slide-09';
 @import '_engine';
 .#{$slide} {
+	.code {
+		padding: 42px 52px;
+	}
 
+	.slide-title {
+		margin-bottom: 17px;
+	}
+
+	.slide-paragraph {
+		width: 500px;
+		margin-bottom: 22px;
+	}
+
+	.accent {
+		margin-left: -28px;
+		margin-bottom: 25px;
+		position: relative;
+		font-size: 16px;
+		margin-top: 30px;
+		width: 478px;
+	}
+
+	.accent__wrapper {
+		padding: 21px 23px 21px;
+	}
+
+	.button {
+		margin-left: 206px;
+	}
+
+	.first_plan {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 1025px;
+	}
 }
 // animations
 .#{$slide} {
