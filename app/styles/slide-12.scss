@@ -1,0 +1,72 @@
+$slide: 'slide-12';
+@import '_engine';
+.#{$slide} {
+	.code {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 25px 32px;
+		justify-content: space-between;
+		align-content: space-between;
+		font-size: 12px;
+	}
+
+	.section {
+		width: 468px;
+		height: 266px;
+		background: white;
+		border-radius: 16px;
+		text-align: center;
+		padding-top: 26px;
+	}
+
+	.section__photo {
+		width: 134px;
+		margin-bottom: 6px;
+	}
+
+	.section__title {
+		@include text(24px, $titleColor, 'Vollkorn', 600);
+		margin-bottom: 5px;
+	}
+
+	.popup {
+		.relative {
+			display: flex;
+			margin-top: 60px;
+		}
+
+		.relative__photo {
+			width: 134px;
+			margin-bottom: 10px;
+		}
+
+		.relative__name {
+			@include text(24px, $titleColor, 'Vollkorn', 600);
+			line-height: 100%;
+			margin-bottom: 10px;
+		}
+
+		.relative__caption {
+			font-size: 12px;
+		}
+
+		.column--person {
+			width: 286px;
+			margin-right: 44px;
+		}
+
+		.column--text {
+			flex: 1;
+			line-height: 22px;
+		}
+	}
+}
+// animations
+.#{$slide} {
+
+
+// inital state
+	&.slide-active {
+		// active state
+	}
+}

@@ -162,8 +162,10 @@ body {
     letter-spacing: 0;
 
     .popup-title {
-      text-align: center;
-      letter-spacing: inherit;
+      height: 81px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     strong {
