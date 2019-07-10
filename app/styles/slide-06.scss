@@ -2,9 +2,80 @@ $slide: 'slide-06';
 @import '_engine';
 .#{$slide} {
 
+	.code {
+		padding: 44px 252px 0 252px;
+	}
+
+	.slide-title {
+		text-align: center;
+		line-height: 117%;
+	}
+
+	.state {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 1024px;
+		opacity: 0;
+		transition: opacity 1s;
+
+		&.active {
+			transition: opacity 1s;
+			opacity: 1;
+		}
+	}
+
+	.state-0 {
+		width: 771px;
+	}
+
+	.state-1 {
+		width: 853px;
+	}
+
+	.state-3 {
+		width: 576px;
+		left: 129px;
+		top: 139px;
+	}
+
+	.state-4 {
+		width: 532px;
+		left: 175px;
+		top: 388px;
+	}
+
+	.pack {
+		position: absolute;
+		width: 468px;
+		top: 220px;
+		right: -468px;
+
+
+		&.active {
+			animation-name: pack-active;
+			animation-duration: 3s;
+			right: -209px;
+		}
+	}
+
+
 }
 // animations
 .#{$slide} {
+	@keyframes pack-active {
+		from {
+			right: -468px;
+		}
+
+		to {
+			right: -209px;
+		}
+
+		50% {
+			right: 20%;
+		}
+	}
 
 
 // inital state
