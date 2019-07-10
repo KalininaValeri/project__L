@@ -1,0 +1,51 @@
+$slide: 'slide-14';
+@import '_engine';
+.#{$slide} {
+
+	.code {
+		display: flex;
+		padding: 39px 22px 0 35px;
+		justify-content: space-between;
+	}
+
+	.section {
+		width: 314px;
+		height: 243px;
+		padding: 7px 10px;
+		text-align: center;
+	}
+
+	.section__title {
+		@include text(14px, $titleColor, 'Vollkorn', 900, 16px);
+		height: 85px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		line-height: 158%;
+	}
+
+	.section__caption {
+		@include text(12px, #DCCBBC, 'helvetica', normal, 16px);
+		font-style: italic;
+	}
+
+	.section__text {
+		@include text(12px, inherit, 'Vollkorn', normal, 22px);
+		height: 101px;
+		display: flex;
+		align-items: flex-end;
+		text-align: center;
+		justify-content: center;
+	}
+
+}
+// animations
+.#{$slide} {
+
+
+// inital state
+	&.slide-active {
+		// active state
+	}
+}
