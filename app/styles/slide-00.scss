@@ -18,6 +18,10 @@ $slide: 'slide-00';
     position: absolute;
     top: 245.25px;
     left: 220.38px;
+    animation-fill-mode: both;
+    animation-name: opacity;
+    animation-duration: 400ms;
+    animation-delay: 1000ms;
   }
 
   .caption {
@@ -26,6 +30,11 @@ $slide: 'slide-00';
     width: 428px;
     left: 50%;
     transform: translate(-50%);
+
+    animation-fill-mode: both;
+    animation-name: opacity;
+    animation-duration: 400ms;
+    animation-delay: 1000ms;
   }
 
   .first_plan {
@@ -44,6 +53,14 @@ $slide: 'slide-00';
 
 // animations
 .#{$slide} {
+  @keyframes opacity {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   // inital state
   &.slide-active {
     // active state
