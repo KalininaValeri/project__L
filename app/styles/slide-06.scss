@@ -52,10 +52,11 @@ $slide: 'slide-06';
 		right: -468px;
 
 
-		&.active {
-			animation-name: pack-active;
+		&.animate {
+			animation-name: move;
 			animation-duration: 3s;
-			right: -209px;
+			width: 468px;
+			top: 220px;
 		}
 	}
 
@@ -63,7 +64,7 @@ $slide: 'slide-06';
 }
 // animations
 .#{$slide} {
-	@keyframes pack-active {
+	@keyframes move {
 		from {
 			right: -468px;
 		}

@@ -1,10 +1,268 @@
 $slide: 'slide-07';
 @import '_engine';
 .#{$slide} {
+	.slide-title {
+		width: 532px;
+		margin: 30px auto;
+		text-align: center;
+		line-height: 100%;
+	}
+
+	.img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 1064px;
+	}
+
+	.elements {
+		top: 8px;
+		left: -5px;
+		width: 1035px;
+	}
+
+	.bad {
+		left: 65px;
+		width: 933px;
+		top: 121px;
+
+		img.not-active {
+				opacity: 0;
+				transition-property: opacity;
+				transition-duration: 800ms;
+		}
+	}
+
+	.bad--1 {
+		width: 120px;
+		top: 147px;
+		left: 182px;
+
+		&.not-active {
+			transition-delay: 800ms;
+		}
+	}
+
+	.bad--2 {
+		width: 35px;
+		top: 423px;
+		left: 0;
+		&.not-active {
+			transition-delay: 1600ms;
+		}
+	}
+
+	.bad--3 {
+		width: 25px;
+		top: 0px;
+		left: 912px;
+		&.not-active {
+			transition-delay: 2400ms;
+		}
+	}
+
+	.text {
+		width: 932px;
+		top: 372px;
+		left: 22px;
+	}
+
+	.helper {
+		width: 174px;
+		left: 28px;
+		top: 190px;
+	}
+
+	.killer {
+		width: 229px;
+		left: 390px;
+		top: 268px;
+
+		&.animate {
+			animation-name: killer-animation;
+			animation-duration: 3200ms;
+		}
+	}
+
+	.mackrofag, .mackrofag--yellow {
+		width: 312px;
+		left: 694px;
+		top: 173px;
+	}
+
+	.mackrofag.not-active {
+		opacity: 0;
+	}
+
+	.mackrofag--yellow {
+		opacity: 0;
+
+		&.active {
+			opacity: 1;
+			transition: opacity 400ms;
+		}
+
+		&.animate {
+			animation-name: mackrofag-animation;
+			animation-duration: 3200ms;
+		}
+	}
+
+	.bitmap, .bitmap--blue {
+		width: 190px;
+		top: 426px;
+		left: 192px;
+	}
+
+	.bitmap--blue {
+		opacity: 0;
+
+		&.active {
+			opacity: 1;
+			transition: opacity 400ms 400ms;
+		}
+	}
+
+	.ys, .ys--light {
+		width: 300px;
+		top: 360px;
+		left: 128px;
+		opacity: 0;
+		transition: opacity 400ms 2400ms;
+		&.active {
+			opacity: 1;
+			transition: opacity 400ms;
+		}
+	}
+
+	.ys.active {
+		transition-delay: 800ms;
+	}
+
+	.ys--2 {
+		width: 450px;
+		top: 434px;
+		left: 497px;
+		opacity: 0;
+		&.active {
+			opacity: 1;
+			transition: opacity 400ms 400ms;
+		}
+	}
+
+	.spiders {
+		width: 395px;
+		top: 411px;
+		left: 537px;
+		opacity: 0;
+
+		&.active {
+			opacity: 1;
+			transition: opacity 400ms;
+		}
+	}
+
+	.cock--1, .cock--2, .cock--3 {
+		opacity: 0;
+		transition-property: opacity;
+		transition-duration: 400ms;
+
+
+		&.active {
+			opacity: 1;
+			transition: opacity 400ms;
+		}
+	}
+
+	.cock--1 {
+		transition-delay: 2400ms;
+	}
+
+	.cock--2 {
+		transition-delay: 1600ms;
+	}
+
+	.cock--3 {
+		transition-delay: 800ms;
+	}
+
+	.cock--1 {
+		width: 120px;
+		top: 408px;
+		left: 580px;
+	}
+
+	.cock--2 {
+		width: 118px;
+		top: 562px;
+		left: 499px;
+	}
+
+	.cock--3 {
+		width: 122px;
+		top: 481px;
+		left: 824px;
+	}
 
 }
 // animations
 .#{$slide} {
+
+
+
+	@keyframes killer-animation {
+		from {
+			left: 390px;
+			top: 268px;
+		}
+
+		to {
+			left: 390px;
+			top: 268px;
+		}
+
+		25% {
+			left: 255px;
+			top: 223px;
+		}
+
+		50% {
+			left: 2px;
+			top: 428px;
+		}
+
+		75% {
+			left: 813px;
+			top: 94px;
+		}
+	}
+
+	@keyframes mackrofag-animation {
+		from {
+			left: 694px;
+			top: 173px;
+		}
+
+		to {
+			left: 694px;
+			top: 173px;
+		}
+
+		25% {
+			left: 739px;
+			top: 414px;
+		}
+
+		50% {
+			left: 406px;
+			top: 495px;
+		}
+
+		75% {
+			left: 516px;
+			top: 289px;
+		}
+	}
 
 
 // inital state
