@@ -40,7 +40,7 @@ $(function() {
             spiders.classList.remove('active');
             ys2.classList.remove('active');
             ys.classList.remove('active');
-            mackrofag.classList.remove('not-active');
+            mackrofag.classList.add('not-active');
             mackrofagYellow.classList.add('animate');
             ysLight.classList.remove('active');
             for (var k=0; k < cocs.length; k++) {

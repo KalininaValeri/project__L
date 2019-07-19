@@ -52,10 +52,10 @@ $slide: 'slide-06';
 		right: -468px;
 
 
-		&.animate {
+		&.active {
 			animation-name: move;
 			animation-duration: 3s;
-			width: 468px;
+			right: -209px;
 			top: 220px;
 		}
 	}
