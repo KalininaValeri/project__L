@@ -1,6 +1,5 @@
 $slide: 'slide-00';
 @import "engine";
-@import "theme";
 
 .#{$slide} {
   .slide-title {
@@ -42,12 +41,6 @@ $slide: 'slide-00';
     position: absolute;
     right: 0;
     bottom: 60px;
-  }
-
-  .footer {
-    .dop {
-      // display: none;
-    }
   }
 }
 
