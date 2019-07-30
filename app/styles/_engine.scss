@@ -259,6 +259,12 @@ body {
   height: 768px;
   transition: left 800ms;
 
+  .slide-title {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
   .content {
     padding-top: 50px;
   }
