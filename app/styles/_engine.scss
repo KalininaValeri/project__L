@@ -62,10 +62,10 @@ body {
 
 .header, .footer {
   position: relative;
-  z-index: 10;
 }
 
 .header {
+  z-index: 30;
   height: 104px;
   background: #fff;
   display: flex;
@@ -205,6 +205,7 @@ body {
 
 //footer
 .footer {
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   height: 62px;
@@ -257,7 +258,8 @@ body {
   transform: none;
   width: 50%;
   height: 768px;
-  transition: left 800ms;
+  transition: all 800ms;
+  opacity: 1;
 
   .slide-title {
     width: 100%;
@@ -266,7 +268,7 @@ body {
   }
 
   .content {
-    padding-top: 50px;
+    padding-top: 150px;
   }
 
   .content__list {
